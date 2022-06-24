@@ -17,6 +17,11 @@ pipeline {
                 echo 'Deploying application'
             }
         }
+        stage('Update') {
+            steps {
+                echo 'Updating application'
+            }
+        }
     }
     post{
         always{
